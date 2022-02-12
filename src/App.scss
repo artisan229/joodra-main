@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'nixgon';
+  src: url('../public/NIXGONFONTS\ M\ 2.0.ttf');
+}
+
+@font-face {
+  font-family: 'nixgon-bold';
+  src: url('../public/NIXGONFONTS\ B\ 2.0.ttf');
+}
+
+@font-face {
+  font-family: 'nixgon-light';
+  src: url('../public/NIXGONFONTS\ L\ 2.0.ttf');
+}
+
+
+h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  font-family: 'nixgon';
+}
+
+.navbar {
+  display: flex;
+  justify-content: start;
+  background: #272727;
+  color: #FBB057;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  img {
+    margin: 15px;
+    margin-right: 23px;
+    width: 120px;
+    height: auto;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  p {
+    &:hover {
+      cursor: pointer;
+    }
+    line-height: 50px;
+    margin-right: 16px;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.main-hello {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  z-index: 2;
+  background: none;
+  h1 {
+    font-size: 50px;
+    padding: 180px;
+    color: #2b2b2b;
+  }
+  span {
+    color: #FBB057;
+  }
+}
+
+.main-screen {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 100px;
+  background-image: url('../public/main-screen.jpg');
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dark {
+  position: absolute;
+  margin: 10px;
+  width: 185px;
+  height: 235px;
+  background: rgba(251, 176, 87, 0.9);
+  color: black;
+  opacity: 0;
+  z-index: 2;
+  border-radius: 25px;
+  transition: all 0.5s;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.dark-source {
+  text-align: center;
+  font-size: 18px;
+  h3 {
+    margin-top: 125px;
+    margin-bottom: 10px;
+  }
+}
+
+.card1 {
+  position: relative;
+  width: 185px;
+  height: 235px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #FBB057;
+  border-radius: 25px;
+  background-image: url("../public/cho.jpg");
+  background-size: cover;
+}
+
+.card2 {
+  position: relative;
+  width: 185px;
+  height: 235px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #FBB057;
+  border-radius: 25px;
+  background-image: url("../public/kang.jpg");
+  background-size: cover;
+}
+
+.card3 {
+  position: relative;
+  width: 185px;
+  height: 235px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #FBB057;
+  border-radius: 25px;
+  background-image: url("../public/choi.jpg");
+  background-size: cover;
+}
+
+.card4 {
+  position: relative;
+  width: 185px;
+  height: 235px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #FBB057;
+  border-radius: 25px;
+  background-image: url("../public/lee.png");
+  background-size: cover;
+}
+
+.award-container {
+  display: flex;
+  justify-content: center;
+}
+
+.award-img {
+  width: 250px;
+  margin: 30px;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+}
+
+.award-caption {
+  margin-top: 30px;
+}
+
+.main-willywood {
+  display: flex;
+  h4 {
+    padding: 50px;
+    margin: 90px;
+    font-size: 50px;
+  }
+}
+
+.ww-basic {
+  position: relative;
+  width: 50%;
+  height: 350px;
+  background: #FBB057;
+  color: #575453;
+}
+
+.ww-premium {
+  position: relative;
+  width: 50%;
+  height: 350px;
+  background: #575453;
+  color: #FBB057;
+}
+
+.white-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0px solid white;
+  transition: all 0.5s;
+  &:hover{
+    border: 30px solid white;
+  }
+}
+
+iframe {
+  width: 450px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.footer {
+  height: 170px;
+  background: #272727;
+  text-align: left;
+  margin-top: 100px;
+}
+
+.info {
+  color: white;
+  padding: 30px;
+  line-height: 25px;
+}
