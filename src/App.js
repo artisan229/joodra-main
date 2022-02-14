@@ -15,19 +15,35 @@ function App() {
       <div className="navbar">
         <img onClick={() => { mainRef.current.scrollIntoView({ behavior: 'smooth' }) }} src={'joodra_logo.png'} alt="logo" />
         <div className="nav-center">
+          <p onClick={() => { willywoodRef.current.scrollIntoView({ behavior: 'smooth' }) }}>WillyWood</p>
           <p onClick={() => { teamRef.current.scrollIntoView({ behavior: 'smooth' }) }}>Team</p>
           <p onClick={() => { awardRef.current.scrollIntoView({ behavior: 'smooth' }) }}>Award</p>
-          <p onClick={() => { willywoodRef.current.scrollIntoView({ behavior: 'smooth' }) }}>WillyWood</p>
           <p onClick={() => { contactRef.current.scrollIntoView({ behavior: 'smooth' }) }}>Contact</p>
         </div>
       </div>
       <div className="main-hello">
-        <h1>We Will Go Hollywood<br /><br />We Are <span>Joodra</span></h1>
+        <h1>인디영화에서 숏 폼을 지나 뉴미디어로<br /><br /><span>WILLYWOOD</span></h1>
       </div>
       <div className="main-screen"></div>
+      <div style={{ height: '180px' }} ref={willywoodRef}></div>
+      <h1 style={{ fontSize: "56px", marginBottom: '100px' }}>WillyWood</h1>
+      <div className="main-willywood">
+        <div className="ww-basic">
+          <div className="white-box"></div>
+          <div className="basic-source">
+            <h4>Basic</h4>
+          </div>
+        </div>
+        <div className="ww-premium">
+          <div className="white-box"></div>
+          <div className="premium-source">
+            <h4>Premium</h4>
+          </div>
+        </div>
+      </div>
       <div ref={teamRef}>
-        <div style={{ height: '150px' }}></div>
-        <h1>Team</h1>
+        <div style={{ height: '180px' }}></div>
+        <h1 style={{fontSize: '56px', marginBottom: '100px'}}>Team</h1>
         <div className="team-container">
           <div>
             <div className="dark">
@@ -67,9 +83,9 @@ function App() {
           </div>
         </div>
       </div>
-      <div style={{ height: '160px' }} ref={awardRef}></div>
+      <div style={{height: '180px' }} ref={awardRef}></div>
       <div>
-        <h1>Award</h1>
+        <h1 style={{fontSize: '56px'}}>Award</h1>
         <div className="award-container">
           <div className="award-img">
             <img src='toss.jpg' alt='toss' />
@@ -77,7 +93,7 @@ function App() {
               <h3>{'<'} Toss Found {'>'}<br />Goes to the finals</h3>
             </div>
           </div>
-          <div className="award-img" style={{width: '150px'}}>
+          <div className="award-img" style={{ width: '150px' }}>
             <img src='ku_1.png' alt='ku_1' />
             <div className="award-caption">
               <h3>Moving into Korea Univ. Campus Town </h3>
@@ -86,36 +102,20 @@ function App() {
           <div className="award-img">
             <img src='silver.jpg' alt='silver' />
             <div className="award-caption">
-              <h3>Korea Univ. Campus Town Entrepreneurship Competition<br />Silver Awards</h3>
+              <h3>Korea Univ. Campus Town<br />Entrepreneurship Competition<br />Silver Awards</h3>
             </div>
           </div>
           <div className="award-img">
-            <img style={{border: '2px solid #8b0029', padding: '5px'}} src='ku_2.png' alt='ku_2' />
+            <img style={{ border: '2px solid #8b0029', padding: '5px' }} src='ku_2.png' alt='ku_2' />
             <div className="award-caption">
               <h3>Korea Univ. <br />Crimson Startup Club Selection</h3>
             </div>
           </div>
         </div>
       </div>
-      <div style={{ height: '130px' }} ref={willywoodRef}></div>
-      <h1 style={{ marginBottom: '30px' }}>WillyWood</h1>
-      <div className="main-willywood">
-        <div className="ww-basic">
-          <div className="white-box"></div>
-          <div className="basic-source">
-            <h4>Basic</h4>
-          </div>
-        </div>
-        <div className="ww-premium">
-          <div className="white-box"></div>
-          <div className="premium-source">
-            <h4>Premium</h4>
-          </div>
-        </div>
-      </div>
-      <div style={{ height: '100px' }} ref={contactRef}></div>
+      <div style={{ height: '180px' }} ref={contactRef}></div>
       <div className="main-contact">
-        <h1>Contact</h1>
+        <h1 style={{fontSize: "56px"}}>Contact</h1>
         <div className="contact-source">
           <p><strong>Tel:</strong> 010-4543-4731</p>
           <p><strong>Email:</strong> pronce7@joodra.com</p>
